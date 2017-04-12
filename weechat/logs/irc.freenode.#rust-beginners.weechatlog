@@ -1,0 +1,186 @@
+2017-04-11 17:19:50	-->	malko42 (~malko42@94.228.181.25) has joined #rust-beginners
+2017-04-11 17:19:50	--	Topic for #rust-beginners is "See #rust-beginners on irc.mozilla.org"
+2017-04-11 17:19:50	--	Topic set by michielbdejong (~sid467@2620:101:8016:74::4:1d3) on dim., 31 janv. 2016 13:13:54
+2017-04-11 17:19:50	--	Channel #rust-beginners: 31 nicks (0 ops, 0 voices, 31 normals)
+2017-04-11 17:19:52	--	Channel created on lun., 25 janv. 2016 14:46:17
+2017-04-11 17:19:59	-->	Integralist (~Integrali@89.197.31.22) has joined #rust-beginners
+2017-04-11 17:19:59	<--	Integralist (~Integrali@89.197.31.22) has quit (Read error: Connection reset by peer)
+2017-04-11 17:25:02	-->	Integralist (~Integrali@89.197.31.22) has joined #rust-beginners
+2017-04-11 17:25:02	<--	Integralist (~Integrali@89.197.31.22) has quit (Read error: Connection reset by peer)
+2017-04-11 17:36:17	-->	Integralist (~Integrali@89.197.31.22) has joined #rust-beginners
+2017-04-11 17:36:17	<--	Integralist (~Integrali@89.197.31.22) has quit (Read error: Connection reset by peer)
+2017-04-11 17:41:14	-->	Integralist (~Integrali@89.197.31.22) has joined #rust-beginners
+2017-04-11 17:41:14	<--	Integralist (~Integrali@89.197.31.22) has quit (Read error: Connection reset by peer)
+2017-04-11 17:46:33	-->	Integralist (~Integrali@89.197.31.22) has joined #rust-beginners
+2017-04-11 17:46:34	<--	Integralist (~Integrali@89.197.31.22) has quit (Read error: Connection reset by peer)
+2017-04-11 17:52:21	<--	butterthebuddha (~textual@0587342410.wireless.umich.net) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2017-04-11 17:55:04	-->	butterthebuddha (~textual@0587342410.wireless.umich.net) has joined #rust-beginners
+2017-04-11 17:58:49	<--	butterthebuddha (~textual@0587342410.wireless.umich.net) has quit (Client Quit)
+2017-04-11 18:04:31	-->	butterthebuddha (~textual@0587342410.wireless.umich.net) has joined #rust-beginners
+2017-04-11 18:55:35	<--	butterthebuddha (~textual@0587342410.wireless.umich.net) has quit (Quit: Textual IRC Client: www.textualapp.com)
+2017-04-11 19:54:47	-->	Integralist (~Integrali@92.41.48.73.threembb.co.uk) has joined #rust-beginners
+2017-04-11 19:59:10	<--	Integralist (~Integrali@92.41.48.73.threembb.co.uk) has quit (Ping timeout: 240 seconds)
+2017-04-11 20:44:22	-->	Integralist (~Integrali@95.146.118.181) has joined #rust-beginners
+2017-04-11 20:48:33	<--	netrino (~netrino@199.101.101.112) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2017-04-11 20:48:40	<--	Integralist (~Integrali@95.146.118.181) has quit (Ping timeout: 240 seconds)
+2017-04-11 21:51:20	-->	Integralist (~Integrali@94.197.133.93.threembb.co.uk) has joined #rust-beginners
+2017-04-11 21:55:40	<--	Integralist (~Integrali@94.197.133.93.threembb.co.uk) has quit (Ping timeout: 240 seconds)
+2017-04-11 22:06:50	-->	Integralist (~Integrali@94.197.133.93.threembb.co.uk) has joined #rust-beginners
+2017-04-11 22:11:08	<--	Integralist (~Integrali@94.197.133.93.threembb.co.uk) has quit (Ping timeout: 252 seconds)
+2017-04-11 23:23:10	<--	tgill (tgill@nat/redhat/x-fcirdyvbsnkgtcje) has quit (Remote host closed the connection)
+2017-04-12 00:06:46	<--	item4 (~item4@116.41.94.210) has quit (Ping timeout: 246 seconds)
+2017-04-12 00:07:07	-->	Integralist (~Integrali@94.197.133.93.threembb.co.uk) has joined #rust-beginners
+2017-04-12 00:08:56	-->	item4 (~item4@116.41.94.210) has joined #rust-beginners
+2017-04-12 00:11:51	<--	Integralist (~Integrali@94.197.133.93.threembb.co.uk) has quit (Ping timeout: 245 seconds)
+2017-04-12 00:22:43	-->	Integralist (~Integrali@94.197.133.93.threembb.co.uk) has joined #rust-beginners
+2017-04-12 00:27:38	<--	Integralist (~Integrali@94.197.133.93.threembb.co.uk) has quit (Ping timeout: 260 seconds)
+2017-04-12 00:38:21	-->	Integralist (~Integrali@94.197.133.93.threembb.co.uk) has joined #rust-beginners
+2017-04-12 00:42:40	<--	Integralist (~Integrali@94.197.133.93.threembb.co.uk) has quit (Ping timeout: 240 seconds)
+2017-04-12 01:03:56	-->	netrino (~netrino@199.101.101.112) has joined #rust-beginners
+2017-04-12 01:40:47	-->	Integralist (~Integrali@92.41.31.96.threembb.co.uk) has joined #rust-beginners
+2017-04-12 01:45:10	<--	Integralist (~Integrali@92.41.31.96.threembb.co.uk) has quit (Ping timeout: 240 seconds)
+2017-04-12 01:47:31	-->	hunterlester (~hunterles@c-67-169-120-224.hsd1.ca.comcast.net) has joined #rust-beginners
+2017-04-12 01:52:53	-->	nomicflux (~nomicflux@cpe-174-103-183-220.wi.res.rr.com) has joined #rust-beginners
+2017-04-12 01:56:20	-->	Integralist (~Integrali@92.40.143.2.threembb.co.uk) has joined #rust-beginners
+2017-04-12 02:00:50	<--	Integralist (~Integrali@92.40.143.2.threembb.co.uk) has quit (Ping timeout: 240 seconds)
+2017-04-12 02:10:03	-->	Integralist (~Integrali@92.40.143.2.threembb.co.uk) has joined #rust-beginners
+2017-04-12 02:14:40	<--	Integralist (~Integrali@92.40.143.2.threembb.co.uk) has quit (Ping timeout: 240 seconds)
+2017-04-12 02:25:40	-->	Integralist (~Integrali@92.40.143.2.threembb.co.uk) has joined #rust-beginners
+2017-04-12 02:30:22	<--	Integralist (~Integrali@92.40.143.2.threembb.co.uk) has quit (Ping timeout: 255 seconds)
+2017-04-12 02:31:48	<--	nomicflux (~nomicflux@cpe-174-103-183-220.wi.res.rr.com) has quit (Quit: nomicflux)
+2017-04-12 02:56:36	-->	nomicflux (~nomicflux@cpe-174-103-183-220.wi.res.rr.com) has joined #rust-beginners
+2017-04-12 03:15:48	-->	TheInfosphere (~textual@207.251.103.46) has joined #rust-beginners
+2017-04-12 03:23:23	<--	hunterlester (~hunterles@c-67-169-120-224.hsd1.ca.comcast.net) has quit (Ping timeout: 255 seconds)
+2017-04-12 03:53:37	<--	mson (uid110608@gateway/web/irccloud.com/x-qsntfzokwmdzbjsx) has quit (Quit: Connection closed for inactivity)
+2017-04-12 03:54:44	<--	nomicflux (~nomicflux@cpe-174-103-183-220.wi.res.rr.com) has quit (Quit: nomicflux)
+2017-04-12 03:56:00	<--	TheInfosphere (~textual@207.251.103.46) has quit (Quit: bye.)
+2017-04-12 04:33:32	-->	butterthebuddha (~textual@35.1.8.51) has joined #rust-beginners
+2017-04-12 04:33:42	<--	butterthebuddha (~textual@35.1.8.51) has quit (Client Quit)
+2017-04-12 04:39:00	-->	nomicflux (~nomicflux@cpe-174-103-183-220.wi.res.rr.com) has joined #rust-beginners
+2017-04-12 04:39:08	-->	butterthebuddha (~textual@35.1.8.51) has joined #rust-beginners
+2017-04-12 04:42:06	<--	butterthebuddha (~textual@35.1.8.51) has quit (Read error: Connection reset by peer)
+2017-04-12 05:01:14	-->	Integralist (~Integrali@95.146.118.181) has joined #rust-beginners
+2017-04-12 05:05:36	<--	Integralist (~Integrali@95.146.118.181) has quit (Ping timeout: 245 seconds)
+2017-04-12 05:39:39	<--	netrino (~netrino@199.101.101.112) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2017-04-12 05:48:06	-->	Integralist (~Integrali@95.146.118.181) has joined #rust-beginners
+2017-04-12 05:50:17	<--	nomicflux (~nomicflux@cpe-174-103-183-220.wi.res.rr.com) has quit (Quit: nomicflux)
+2017-04-12 05:52:35	<--	Integralist (~Integrali@95.146.118.181) has quit (Ping timeout: 240 seconds)
+2017-04-12 06:05:50	-->	butterthebuddha (~textual@35.1.8.51) has joined #rust-beginners
+2017-04-12 06:08:27	<--	item4 (~item4@116.41.94.210) has quit (Read error: Connection reset by peer)
+2017-04-12 06:10:38	-->	mson (uid110608@gateway/web/irccloud.com/x-rnheqbqwhrhojtxl) has joined #rust-beginners
+2017-04-12 06:11:02	-->	item4 (~item4@116.41.94.210) has joined #rust-beginners
+2017-04-12 06:18:59	-->	hunterlester (~hunterles@c-67-169-120-224.hsd1.ca.comcast.net) has joined #rust-beginners
+2017-04-12 06:23:10	<--	hunterlester (~hunterles@c-67-169-120-224.hsd1.ca.comcast.net) has quit (Ping timeout: 240 seconds)
+2017-04-12 07:02:57	<--	butterthebuddha (~textual@35.1.8.51) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2017-04-12 08:01:39	-->	moon125 (~Thunderbi@80.227.97.174) has joined #rust-beginners
+2017-04-12 08:13:39	<--	mson (uid110608@gateway/web/irccloud.com/x-rnheqbqwhrhojtxl) has quit (Quit: Connection closed for inactivity)
+2017-04-12 08:32:43	<--	moon125 (~Thunderbi@80.227.97.174) has quit (Quit: moon125)
+2017-04-12 08:45:44	-->	Integralist (~Integrali@94.196.243.11.threembb.co.uk) has joined #rust-beginners
+2017-04-12 08:56:13	<--	_yeeve (~yeeve@141.170.12.36) has quit (Ping timeout: 268 seconds)
+2017-04-12 08:56:42	-->	_yeeve (~yeeve@141.170.12.36) has joined #rust-beginners
+2017-04-12 08:58:33	-->	moon125 (~Thunderbi@80.227.97.174) has joined #rust-beginners
+2017-04-12 09:14:35	-->	Integral1st (~Integrali@188.28.119.46.threembb.co.uk) has joined #rust-beginners
+2017-04-12 09:17:32	<--	Integralist (~Integrali@94.196.243.11.threembb.co.uk) has quit (Ping timeout: 240 seconds)
+2017-04-12 09:19:48	<--	moon125 (~Thunderbi@80.227.97.174) has quit (Quit: moon125)
+2017-04-12 09:47:12	<--	Integral1st (~Integrali@188.28.119.46.threembb.co.uk) has quit (Ping timeout: 260 seconds)
+2017-04-12 10:18:08	-->	Integralist (~Integrali@89.197.31.22) has joined #rust-beginners
+2017-04-12 10:18:08	<--	Integralist (~Integrali@89.197.31.22) has quit (Read error: Connection reset by peer)
+2017-04-12 10:23:06	-->	Integralist (~Integrali@89.197.31.22) has joined #rust-beginners
+2017-04-12 10:23:07	<--	Integralist (~Integrali@89.197.31.22) has quit (Read error: Connection reset by peer)
+2017-04-12 10:28:04	-->	Integralist (~Integrali@89.197.31.22) has joined #rust-beginners
+2017-04-12 10:28:05	<--	Integralist (~Integrali@89.197.31.22) has quit (Read error: Connection reset by peer)
+2017-04-12 10:46:27	--	irc: disconnected from server
+2017-04-12 10:46:53	-->	malko42 (~malko42@94.228.181.25) has joined #rust-beginners
+2017-04-12 10:46:53	--	Topic for #rust-beginners is "See #rust-beginners on irc.mozilla.org"
+2017-04-12 10:46:53	--	Topic set by michielbdejong (~sid467@2620:101:8016:74::4:1d3) on dim., 31 janv. 2016 13:13:54
+2017-04-12 10:46:53	--	Channel #rust-beginners: 27 nicks (0 ops, 0 voices, 27 normals)
+2017-04-12 10:47:03	--	Channel created on lun., 25 janv. 2016 14:46:17
+2017-04-12 10:49:23	-->	Integralist (~Integrali@89.197.31.22) has joined #rust-beginners
+2017-04-12 10:49:23	<--	Integralist (~Integrali@89.197.31.22) has quit (Read error: Connection reset by peer)
+2017-04-12 10:54:23	-->	Integralist (~Integrali@89.197.31.22) has joined #rust-beginners
+2017-04-12 10:54:24	<--	Integralist (~Integrali@89.197.31.22) has quit (Read error: Connection reset by peer)
+2017-04-12 10:59:24	-->	Integralist (~Integrali@89.197.31.22) has joined #rust-beginners
+2017-04-12 10:59:25	<--	Integralist (~Integrali@89.197.31.22) has quit (Read error: Connection reset by peer)
+2017-04-12 11:04:22	-->	Integralist (~Integrali@89.197.31.22) has joined #rust-beginners
+2017-04-12 11:04:24	<--	Integralist (~Integrali@89.197.31.22) has quit (Read error: Connection reset by peer)
+2017-04-12 11:09:20	-->	Integralist (~Integrali@89.197.31.22) has joined #rust-beginners
+2017-04-12 11:09:21	<--	Integralist (~Integrali@89.197.31.22) has quit (Read error: Connection reset by peer)
+2017-04-12 11:11:31	<--	RastaTux[m] (rastatuxma@gateway/shell/matrix.org/x-fhknifxboroxfnyj) has quit (Remote host closed the connection)
+2017-04-12 11:11:33	<--	waynenilsen[m] (waynenilse@gateway/shell/matrix.org/x-samzjwremfgjzczi) has quit (Write error: Connection reset by peer)
+2017-04-12 11:14:31	-->	Integralist (~Integrali@89.197.31.22) has joined #rust-beginners
+2017-04-12 11:14:31	<--	Integralist (~Integrali@89.197.31.22) has quit (Read error: Connection reset by peer)
+2017-04-12 11:15:16	-->	RastaTux[m] (rastatuxma@gateway/shell/matrix.org/x-myasobdisfwtkkya) has joined #rust-beginners
+2017-04-12 11:19:23	-->	Integralist (~Integrali@89.197.31.22) has joined #rust-beginners
+2017-04-12 11:19:24	<--	Integralist (~Integrali@89.197.31.22) has quit (Read error: Connection reset by peer)
+2017-04-12 11:24:31	-->	Integralist (~Integrali@89.197.31.22) has joined #rust-beginners
+2017-04-12 11:24:31	<--	Integralist (~Integrali@89.197.31.22) has quit (Read error: Connection reset by peer)
+2017-04-12 11:24:45	-->	waynenilsen[m] (waynenilse@gateway/shell/matrix.org/x-gakhdpxklvyjfjrq) has joined #rust-beginners
+2017-04-12 11:29:20	-->	Integralist (~Integrali@89.197.31.22) has joined #rust-beginners
+2017-04-12 11:29:21	<--	Integralist (~Integrali@89.197.31.22) has quit (Read error: Connection reset by peer)
+2017-04-12 11:34:24	-->	Integralist (~Integrali@89.197.31.22) has joined #rust-beginners
+2017-04-12 11:34:25	<--	Integralist (~Integrali@89.197.31.22) has quit (Read error: Connection reset by peer)
+2017-04-12 11:39:24	-->	Integralist (~Integrali@89.197.31.22) has joined #rust-beginners
+2017-04-12 11:39:25	<--	Integralist (~Integrali@89.197.31.22) has quit (Read error: Connection reset by peer)
+2017-04-12 11:44:25	-->	Integralist (~Integrali@89.197.31.22) has joined #rust-beginners
+2017-04-12 11:44:25	<--	Integralist (~Integrali@89.197.31.22) has quit (Read error: Connection reset by peer)
+2017-04-12 11:52:38	-->	malko42 (~malko42@94.228.181.25) has joined #rust-beginners
+2017-04-12 11:52:38	--	Topic for #rust-beginners is "See #rust-beginners on irc.mozilla.org"
+2017-04-12 11:52:38	--	Topic set by michielbdejong (~sid467@2620:101:8016:74::4:1d3) on dim., 31 janv. 2016 13:13:54
+2017-04-12 11:52:38	--	Channel #rust-beginners: 27 nicks (0 ops, 0 voices, 27 normals)
+2017-04-12 11:52:42	--	Channel created on lun., 25 janv. 2016 14:46:17
+2017-04-12 11:54:24	-->	Integralist (~Integrali@89.197.31.22) has joined #rust-beginners
+2017-04-12 11:54:25	<--	Integralist (~Integrali@89.197.31.22) has quit (Read error: Connection reset by peer)
+2017-04-12 11:59:24	-->	Integralist (~Integrali@89.197.31.22) has joined #rust-beginners
+2017-04-12 11:59:25	<--	Integralist (~Integrali@89.197.31.22) has quit (Read error: Connection reset by peer)
+2017-04-12 12:04:23	-->	Integralist (~Integrali@89.197.31.22) has joined #rust-beginners
+2017-04-12 12:04:24	<--	Integralist (~Integrali@89.197.31.22) has quit (Read error: Connection reset by peer)
+2017-04-12 12:09:23	-->	Integralist (~Integrali@89.197.31.22) has joined #rust-beginners
+2017-04-12 12:09:24	<--	Integralist (~Integrali@89.197.31.22) has quit (Read error: Connection reset by peer)
+2017-04-12 12:12:54	-->	netrino (~netrino@199.101.101.112) has joined #rust-beginners
+2017-04-12 12:14:24	-->	Integralist (~Integrali@89.197.31.22) has joined #rust-beginners
+2017-04-12 12:14:25	<--	Integralist (~Integrali@89.197.31.22) has quit (Read error: Connection reset by peer)
+2017-04-12 12:19:24	-->	Integralist (~Integrali@89.197.31.22) has joined #rust-beginners
+2017-04-12 12:19:24	<--	Integralist (~Integrali@89.197.31.22) has quit (Read error: Connection reset by peer)
+2017-04-12 12:24:23	-->	Integralist (~Integrali@89.197.31.22) has joined #rust-beginners
+2017-04-12 12:24:24	<--	Integralist (~Integrali@89.197.31.22) has quit (Read error: Connection reset by peer)
+2017-04-12 12:29:23	-->	Integralist (~Integrali@89.197.31.22) has joined #rust-beginners
+2017-04-12 12:29:23	<--	Integralist (~Integrali@89.197.31.22) has quit (Read error: Connection reset by peer)
+2017-04-12 12:34:23	-->	Integralist (~Integrali@89.197.31.22) has joined #rust-beginners
+2017-04-12 12:34:24	<--	Integralist (~Integrali@89.197.31.22) has quit (Read error: Connection reset by peer)
+2017-04-12 12:39:26	-->	Integralist (~Integrali@89.197.31.22) has joined #rust-beginners
+2017-04-12 12:39:27	<--	Integralist (~Integrali@89.197.31.22) has quit (Read error: Connection reset by peer)
+2017-04-12 12:44:25	-->	Integralist (~Integrali@89.197.31.22) has joined #rust-beginners
+2017-04-12 12:44:26	<--	Integralist (~Integrali@89.197.31.22) has quit (Read error: Connection reset by peer)
+2017-04-12 12:49:24	-->	Integralist (~Integrali@89.197.31.22) has joined #rust-beginners
+2017-04-12 12:49:25	<--	Integralist (~Integrali@89.197.31.22) has quit (Read error: Connection reset by peer)
+2017-04-12 12:54:25	-->	Integralist (~Integrali@89.197.31.22) has joined #rust-beginners
+2017-04-12 12:54:26	<--	Integralist (~Integrali@89.197.31.22) has quit (Read error: Connection reset by peer)
+2017-04-12 12:59:22	-->	Integralist (~Integrali@89.197.31.22) has joined #rust-beginners
+2017-04-12 12:59:23	<--	Integralist (~Integrali@89.197.31.22) has quit (Read error: Connection reset by peer)
+2017-04-12 13:04:24	-->	Integralist (~Integrali@89.197.31.22) has joined #rust-beginners
+2017-04-12 13:04:25	<--	Integralist (~Integrali@89.197.31.22) has quit (Read error: Connection reset by peer)
+2017-04-12 13:09:24	-->	Integralist (~Integrali@89.197.31.22) has joined #rust-beginners
+2017-04-12 13:09:25	<--	Integralist (~Integrali@89.197.31.22) has quit (Read error: Connection reset by peer)
+2017-04-12 13:14:24	-->	Integralist (~Integrali@89.197.31.22) has joined #rust-beginners
+2017-04-12 13:14:25	<--	Integralist (~Integrali@89.197.31.22) has quit (Read error: Connection reset by peer)
+2017-04-12 13:16:55	<--	netrino (~netrino@199.101.101.112) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2017-04-12 13:19:24	-->	Integralist (~Integrali@89.197.31.22) has joined #rust-beginners
+2017-04-12 13:19:24	<--	Integralist (~Integrali@89.197.31.22) has quit (Read error: Connection reset by peer)
+2017-04-12 13:21:10	-->	netrino (~netrino@199.101.101.112) has joined #rust-beginners
+2017-04-12 13:24:26	-->	Integralist (~Integrali@89.197.31.22) has joined #rust-beginners
+2017-04-12 13:24:26	<--	Integralist (~Integrali@89.197.31.22) has quit (Read error: Connection reset by peer)
+2017-04-12 13:29:27	-->	Integralist (~Integrali@89.197.31.22) has joined #rust-beginners
+2017-04-12 13:29:27	<--	Integralist (~Integrali@89.197.31.22) has quit (Read error: Connection reset by peer)
+2017-04-12 13:34:28	-->	Integralist (~Integrali@89.197.31.22) has joined #rust-beginners
+2017-04-12 13:34:29	<--	Integralist (~Integrali@89.197.31.22) has quit (Read error: Connection reset by peer)
+2017-04-12 13:37:46	<--	netrino (~netrino@199.101.101.112) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2017-04-12 13:39:27	-->	Integralist (~Integrali@89.197.31.22) has joined #rust-beginners
+2017-04-12 13:39:28	<--	Integralist (~Integrali@89.197.31.22) has quit (Read error: Connection reset by peer)
+2017-04-12 13:44:28	-->	Integralist (~Integrali@89.197.31.22) has joined #rust-beginners
+2017-04-12 13:44:28	<--	Integralist (~Integrali@89.197.31.22) has quit (Read error: Connection reset by peer)
+2017-04-12 13:49:28	-->	Integralist (~Integrali@89.197.31.22) has joined #rust-beginners
+2017-04-12 13:49:30	<--	Integralist (~Integrali@89.197.31.22) has quit (Read error: Connection reset by peer)
+2017-04-12 13:54:28	-->	Integralist (~Integrali@89.197.31.22) has joined #rust-beginners
+2017-04-12 13:54:29	<--	Integralist (~Integrali@89.197.31.22) has quit (Read error: Connection reset by peer)
+2017-04-12 13:59:25	-->	Integralist (~Integrali@89.197.31.22) has joined #rust-beginners
+2017-04-12 13:59:25	<--	Integralist (~Integrali@89.197.31.22) has quit (Read error: Connection reset by peer)

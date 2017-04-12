@@ -1,0 +1,10 @@
+[user]
+	email = malkovitch@gmail.com
+	name = Maxime Daffis
+	signingkey = D1850DB5
+[commit]
+	gpgsign = true
+[core]
+	editor = vim
+[push]
+	default = simple

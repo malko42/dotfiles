@@ -1,0 +1,130 @@
+2017-04-11 17:23:07	-->	malko42 (~malko42@94.228.181.25) has joined #rethinkdb
+2017-04-11 17:23:08	--	Topic for #rethinkdb is "RethinkDB - http://www.rethinkdb.com | Main chat room: http://slack.rethinkdb.com | IRC log: http://irclogger.com/.rethinkdb"
+2017-04-11 17:23:08	--	Topic set by AtnNn (~atnnn@circus.atnnn.com) on lun., 20 févr. 2017 02:07:17
+2017-04-11 17:23:08	--	Channel #rethinkdb: 97 nicks (2 ops, 0 voices, 95 normals)
+2017-04-11 17:23:09	--	Channel created on jeu., 01 nov. 2012 08:02:03
+2017-04-11 17:32:09	-->	notdaniel (~notdaniel@rrcs-69-75-172-75.west.biz.rr.com) has joined #rethinkdb
+2017-04-11 18:11:48	-->	`jpg (~jpg@c-98-210-156-177.hsd1.ca.comcast.net) has joined #rethinkdb
+2017-04-11 18:23:18	<--	`jpg (~jpg@c-98-210-156-177.hsd1.ca.comcast.net) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2017-04-11 18:44:18	-->	`jpg (~jpg@2603:3024:1c04:fde0:daa:2cf:ce57:f01f) has joined #rethinkdb
+2017-04-11 18:54:24	<--	`jpg (~jpg@2603:3024:1c04:fde0:daa:2cf:ce57:f01f) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2017-04-11 18:57:18	<--	notdaniel (~notdaniel@rrcs-69-75-172-75.west.biz.rr.com) has quit (Quit: Textual IRC Client: www.textualapp.com)
+2017-04-11 18:57:44	-->	bcd (~bcd@5354B0A0.cm-6-5c.dynamic.ziggo.nl) has joined #rethinkdb
+2017-04-11 19:35:45	--	F2Knight is now known as F2Knight[away]
+2017-04-11 19:44:54	-->	`jpg (~jpg@2603:3024:1c04:fde0:3431:72b:518f:2d45) has joined #rethinkdb
+2017-04-11 19:55:21	<--	`jpg (~jpg@2603:3024:1c04:fde0:3431:72b:518f:2d45) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2017-04-11 20:02:23	<--	rendar (~I@unaffiliated/rendar) has quit (Ping timeout: 255 seconds)
+2017-04-11 20:07:54	-->	`jpg (~jpg@2603:3024:1c04:fde0:f5bc:76e3:a884:6572) has joined #rethinkdb
+2017-04-11 20:14:06	-->	FatalNIX (~FatalNIX@coreos2.lobsternetworks.com) has joined #rethinkdb
+2017-04-11 20:16:58	FatalNIX	How do changefeeds work internally? if you subsribe to some table or something and somebody updates it, Do you get an event from the rethinkdb server the moment it happens or does the db continuously send a stream of empty updates until there's a population of data? I ask because the client driver I am using is making it seem like the latter, and it just
+2017-04-11 20:16:58	FatalNIX	seems a bit weird it wouldn't be a bit more event driven, which I understand is more in the scope of the client driver and not RethinkDB itself..
+2017-04-11 20:22:13	<--	FatalNIX (~FatalNIX@coreos2.lobsternetworks.com) has quit (Changing host)
+2017-04-11 20:22:13	-->	FatalNIX (~FatalNIX@unaffiliated/fatalnix) has joined #rethinkdb
+2017-04-11 20:28:39	<--	`jpg (~jpg@2603:3024:1c04:fde0:f5bc:76e3:a884:6572) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2017-04-11 20:30:38	FatalNIX	I guess what I am looking for is a database like RethinkDB with a push instead of a pull model for changes
+2017-04-11 20:31:14	-->	`jpg (~jpg@c-98-210-156-177.hsd1.ca.comcast.net) has joined #rethinkdb
+2017-04-11 20:31:23	FatalNIX	or if it's a pull model, what drivers sort of turn that around in a thread safe or coroutine friendly manner.. or so.
+2017-04-11 20:31:29	-->	rendar (~I@host59-179-dynamic.23-79-r.retail.telecomitalia.it) has joined #rethinkdb
+2017-04-11 20:31:29	<--	rendar (~I@host59-179-dynamic.23-79-r.retail.telecomitalia.it) has quit (Changing host)
+2017-04-11 20:31:29	-->	rendar (~I@unaffiliated/rendar) has joined #rethinkdb
+2017-04-11 20:37:30	streaky	you might have better luck asking in the rethinkdb slack
+2017-04-11 20:54:21	<--	`jpg (~jpg@c-98-210-156-177.hsd1.ca.comcast.net) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2017-04-11 20:55:36	-->	`jpg (~jpg@2603:3024:1c04:fde0:8d4a:3f31:327a:77c) has joined #rethinkdb
+2017-04-11 20:55:52	<--	`jpg (~jpg@2603:3024:1c04:fde0:8d4a:3f31:327a:77c) has quit (Client Quit)
+2017-04-11 20:56:28	-->	`jpg (~jpg@2603:3024:1c04:fde0:8d4a:3f31:327a:77c) has joined #rethinkdb
+2017-04-11 20:56:41	<--	`jpg (~jpg@2603:3024:1c04:fde0:8d4a:3f31:327a:77c) has quit (Client Quit)
+2017-04-11 20:57:17	-->	`jpg (~jpg@c-98-210-156-177.hsd1.ca.comcast.net) has joined #rethinkdb
+2017-04-11 20:57:29	<--	`jpg (~jpg@c-98-210-156-177.hsd1.ca.comcast.net) has quit (Client Quit)
+2017-04-11 20:58:55	-->	`jpg (~jpg@2603:3024:1c04:fde0:8d4a:3f31:327a:77c) has joined #rethinkdb
+2017-04-11 20:59:05	<--	`jpg (~jpg@2603:3024:1c04:fde0:8d4a:3f31:327a:77c) has quit (Client Quit)
+2017-04-11 20:59:35	FatalNIX	Likelu
+2017-04-11 20:59:37	FatalNIX	Likely*
+2017-04-11 21:18:04	-->	`jpg (~jpg@c-98-210-156-177.hsd1.ca.comcast.net) has joined #rethinkdb
+2017-04-11 21:25:27	<--	`jpg (~jpg@c-98-210-156-177.hsd1.ca.comcast.net) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2017-04-11 21:37:45	-->	`jpg (~jpg@199-230-11-27.PUBLIC.monkeybrains.net) has joined #rethinkdb
+2017-04-11 21:49:09	<--	`jpg (~jpg@199-230-11-27.PUBLIC.monkeybrains.net) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2017-04-11 22:29:35	<--	rendar (~I@unaffiliated/rendar) has quit (Quit: std::lower_bound + std::less_equal *works* with a vector without duplicates!)
+2017-04-11 22:31:18	-->	`jpg (~jpg@199-230-11-27.PUBLIC.monkeybrains.net) has joined #rethinkdb
+2017-04-11 22:31:19	<--	SkyRocknRoll (~SkyRocknR@unaffiliated/skyrocknroll) has quit (Quit: Ex-Chat)
+2017-04-11 22:54:04	-->	meppl (~mephisto@p200300764C63BF008E89A5FFFE9CDA1B.dip0.t-ipconnect.de) has joined #rethinkdb
+2017-04-11 23:10:38	<--	`jpg (~jpg@199-230-11-27.PUBLIC.monkeybrains.net) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2017-04-11 23:38:22	-->	`jpg (~jpg@199-230-11-27.PUBLIC.monkeybrains.net) has joined #rethinkdb
+2017-04-12 00:03:55	-->	sergepoele (324067aa@gateway/web/freenode/ip.50.64.103.170) has joined #rethinkdb
+2017-04-12 00:04:51	<--	sergepoele (324067aa@gateway/web/freenode/ip.50.64.103.170) has quit (Client Quit)
+2017-04-12 00:29:09	-->	notdanie_ (~notdaniel@2605:e000:92c1:e00:d855:16b0:11a3:e136) has joined #rethinkdb
+2017-04-12 01:45:43	<--	`jpg (~jpg@199-230-11-27.PUBLIC.monkeybrains.net) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2017-04-12 01:47:48	<--	notdanie_ (~notdaniel@2605:e000:92c1:e00:d855:16b0:11a3:e136) has quit (Quit: Textual IRC Client: www.textualapp.com)
+2017-04-12 01:57:31	-->	`jpg (~jpg@199-230-11-27.PUBLIC.monkeybrains.net) has joined #rethinkdb
+2017-04-12 01:59:51	<--	`jpg (~jpg@199-230-11-27.PUBLIC.monkeybrains.net) has quit (Read error: Connection reset by peer)
+2017-04-12 02:00:38	-->	`jpg (~jpg@199-230-11-27.PUBLIC.monkeybrains.net) has joined #rethinkdb
+2017-04-12 02:28:28	<--	`jpg (~jpg@199-230-11-27.PUBLIC.monkeybrains.net) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2017-04-12 02:35:51	<--	joshontheweb (~joshonthe@2601:681:4202:25ba:558e:19:3702:7f96) has quit (Quit: Computer has gone to sleep.)
+2017-04-12 02:49:24	-->	joshontheweb (~joshonthe@2601:681:4202:25ba:4da1:4cc2:aa20:7876) has joined #rethinkdb
+2017-04-12 02:53:13	<--	meppl (~mephisto@p200300764C63BF008E89A5FFFE9CDA1B.dip0.t-ipconnect.de) has quit (Quit: Verlassend)
+2017-04-12 03:07:23	-->	`jpg (~jpg@199-230-11-27.PUBLIC.monkeybrains.net) has joined #rethinkdb
+2017-04-12 03:08:11	<--	Guest46350 (~nya@p7902c6f7.tokynt01.ap.so-net.ne.jp) has quit (Remote host closed the connection)
+2017-04-12 03:42:46	<--	`jpg (~jpg@199-230-11-27.PUBLIC.monkeybrains.net) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2017-04-12 03:58:58	-->	nya (~nya@210.135.96.135) has joined #rethinkdb
+2017-04-12 03:59:18	<--	nya (~nya@210.135.96.135) has quit (Read error: Connection reset by peer)
+2017-04-12 03:59:31	-->	nya (~nya@210.135.96.135) has joined #rethinkdb
+2017-04-12 03:59:54	--	nya is now known as Guest708
+2017-04-12 04:01:29	<--	Guest708 (~nya@210.135.96.135) has quit (Remote host closed the connection)
+2017-04-12 04:01:55	-->	`jpg (~jpg@199-230-11-27.PUBLIC.monkeybrains.net) has joined #rethinkdb
+2017-04-12 04:58:44	-->	nya (~nya@ai126149000196.54.access-internet.ne.jp) has joined #rethinkdb
+2017-04-12 04:59:07	--	nya is now known as Guest67117
+2017-04-12 05:03:21	-->	SkyRocknRoll (~SkyRocknR@unaffiliated/skyrocknroll) has joined #rethinkdb
+2017-04-12 05:06:39	-->	xtreak (~xtreak@182.73.135.26) has joined #rethinkdb
+2017-04-12 05:16:59	<--	`jpg (~jpg@199-230-11-27.PUBLIC.monkeybrains.net) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2017-04-12 05:18:22	-->	`jpg (~jpg@199-230-11-27.PUBLIC.monkeybrains.net) has joined #rethinkdb
+2017-04-12 05:18:47	<--	xtreak (~xtreak@182.73.135.26) has quit (Remote host closed the connection)
+2017-04-12 05:19:22	-->	xtreak (~xtreak@182.73.135.26) has joined #rethinkdb
+2017-04-12 05:21:12	-->	notdaniel (~notdaniel@2605:e000:92c1:e00:d855:16b0:11a3:e136) has joined #rethinkdb
+2017-04-12 05:22:13	<--	`jpg (~jpg@199-230-11-27.PUBLIC.monkeybrains.net) has quit (Client Quit)
+2017-04-12 05:23:32	<--	SkyRocknRoll (~SkyRocknR@unaffiliated/skyrocknroll) has quit (Read error: No route to host)
+2017-04-12 05:23:40	<--	xtreak (~xtreak@182.73.135.26) has quit (Ping timeout: 240 seconds)
+2017-04-12 05:36:48	-->	xtreak (~xtreak@182.73.135.26) has joined #rethinkdb
+2017-04-12 06:13:26	<--	notdaniel (~notdaniel@2605:e000:92c1:e00:d855:16b0:11a3:e136) has quit (Quit: Textual IRC Client: www.textualapp.com)
+2017-04-12 06:37:57	<--	joshontheweb (~joshonthe@2601:681:4202:25ba:4da1:4cc2:aa20:7876) has quit (Quit: Computer has gone to sleep.)
+2017-04-12 07:16:30	<--	xtreak (~xtreak@182.73.135.26) has quit (Remote host closed the connection)
+2017-04-12 07:43:08	<--	streaky (~streaky@pdpc/supporter/professional/streaky) has quit (Ping timeout: 240 seconds)
+2017-04-12 07:43:15	-->	streaky (~streaky@pdpc/supporter/professional/streaky) has joined #rethinkdb
+2017-04-12 08:02:34	-->	xtreak (~xtreak@182.73.135.26) has joined #rethinkdb
+2017-04-12 08:30:13	-->	rendar (~I@unaffiliated/rendar) has joined #rethinkdb
+2017-04-12 08:55:36	<--	benjick (benjick@irc.kandata.se) has quit (Ping timeout: 268 seconds)
+2017-04-12 08:56:08	<--	xintox (~xintox@104.219.55.207) has quit (Ping timeout: 240 seconds)
+2017-04-12 08:56:13	<--	AtnNn (~atnnn@circus.atnnn.com) has quit (Ping timeout: 268 seconds)
+2017-04-12 08:56:55	-->	xintox (~xintox@104.219.55.207) has joined #rethinkdb
+2017-04-12 09:01:20	-->	AtnNn (~atnnn@circus.atnnn.com) has joined #rethinkdb
+2017-04-12 09:01:20	--	Mode #rethinkdb [+o AtnNn] by ChanServ
+2017-04-12 09:01:22	-->	benjick (benjick@irc.kandata.se) has joined #rethinkdb
+2017-04-12 09:07:31	<--	Guest67117 (~nya@ai126149000196.54.access-internet.ne.jp) has quit (Read error: No route to host)
+2017-04-12 09:07:52	-->	nya (~nya@210.135.96.135) has joined #rethinkdb
+2017-04-12 09:08:15	--	nya is now known as Guest55994
+2017-04-12 09:27:39	<--	Guest55994 (~nya@210.135.96.135) has quit (Ping timeout: 268 seconds)
+2017-04-12 10:00:01	-->	SkyRocknRoll (~SkyRocknR@unaffiliated/skyrocknroll) has joined #rethinkdb
+2017-04-12 10:03:58	-->	nya (~nya@ai126149000196.54.access-internet.ne.jp) has joined #rethinkdb
+2017-04-12 10:04:22	--	nya is now known as Guest12728
+2017-04-12 10:18:41	<--	SkyRocknRoll (~SkyRocknR@unaffiliated/skyrocknroll) has quit (Quit: Ex-Chat)
+2017-04-12 10:46:27	--	irc: disconnected from server
+2017-04-12 10:46:55	-->	malko42 (~malko42@94.228.181.25) has joined #rethinkdb
+2017-04-12 10:46:55	--	Topic for #rethinkdb is "RethinkDB - http://www.rethinkdb.com | Main chat room: http://slack.rethinkdb.com | IRC log: http://irclogger.com/.rethinkdb"
+2017-04-12 10:46:55	--	Topic set by AtnNn (~atnnn@circus.atnnn.com) on lun., 20 févr. 2017 02:07:17
+2017-04-12 10:46:55	--	Channel #rethinkdb: 98 nicks (2 ops, 0 voices, 96 normals)
+2017-04-12 10:47:05	--	Channel created on jeu., 01 nov. 2012 08:02:03
+2017-04-12 11:11:31	<--	MatthewDahl[m] (roger-dogo@gateway/shell/matrix.org/x-fwsibtvipcsffmtg) has quit (Remote host closed the connection)
+2017-04-12 11:14:37	-->	MatthewDahl[m] (roger-dogo@gateway/shell/matrix.org/x-seprzuemzyjqcuit) has joined #rethinkdb
+2017-04-12 11:23:27	<--	xtreak (~xtreak@182.73.135.26) has quit (Remote host closed the connection)
+2017-04-12 11:24:37	-->	xtreak (~xtreak@182.73.135.26) has joined #rethinkdb
+2017-04-12 11:28:27	<--	xtreak (~xtreak@182.73.135.26) has quit (Remote host closed the connection)
+2017-04-12 11:28:50	-->	xtreak (~xtreak@182.73.135.26) has joined #rethinkdb
+2017-04-12 11:31:55	<--	xtreak (~xtreak@182.73.135.26) has quit (Remote host closed the connection)
+2017-04-12 11:33:12	-->	xtreak (~xtreak@182.73.135.26) has joined #rethinkdb
+2017-04-12 11:52:38	-->	malko42 (~malko42@94.228.181.25) has joined #rethinkdb
+2017-04-12 11:52:38	--	Topic for #rethinkdb is "RethinkDB - http://www.rethinkdb.com | Main chat room: http://slack.rethinkdb.com | IRC log: http://irclogger.com/.rethinkdb"
+2017-04-12 11:52:38	--	Topic set by AtnNn (~atnnn@circus.atnnn.com) on lun., 20 févr. 2017 02:07:17
+2017-04-12 11:52:38	--	Channel #rethinkdb: 99 nicks (2 ops, 0 voices, 97 normals)
+2017-04-12 11:52:38	--	Channel created on jeu., 01 nov. 2012 08:02:03
+2017-04-12 11:58:12	-->	praisethemoon (~praisethe@unaffiliated/praisethemoon) has joined #rethinkdb
+2017-04-12 13:06:10	<--	praisethemoon (~praisethe@unaffiliated/praisethemoon) has quit (Quit: Leaving)
+2017-04-12 13:12:30	<--	Guest12728 (~nya@ai126149000196.54.access-internet.ne.jp) has quit (Remote host closed the connection)
+2017-04-12 13:57:32	<--	`jpg (~jpg@2603:3024:1c04:fde0:2dd9:16c:8c43:6b93) has quit (Read error: Connection reset by peer)

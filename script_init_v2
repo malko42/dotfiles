@@ -1,0 +1,59 @@
+#!/usr/bin/env sh
+#install global
+sudo apt-get install -y git curl tmux vim i3 dmenu dunst zsh build-essential vim thunderbird htop arc-theme lxappearance weechat
+
+#powerline fonts
+git clone https://github.com/powerline/fonts.git
+cd fonts
+./install.sh
+
+#oh-my-zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+#node
+curl -sL https://deb.nodesource.com/setup_7.x | sudo -E bash -
+sudo apt-get install -y nodejs
+
+#resolve npm permission problems
+mkdir ~/.npm-global
+npm config set prefix '~/.npm-global'
+export PATH=~/.npm-global/bin:$PATH
+source ~/.zshrc
+
+#ssh
+cp .ssh ~
+ssh-add
+
+#import gpg
+gpg --import private.key
+
+#rust (pb avec zsh:: export SHELL=/bin/bash puis repasser en SHELL=/usr/bin/zsh et suivre instrcutions (sourcer cargo))
+curl https://sh.rustup.rs -sSf | sh
+
+#YARN
+curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+sudo apt-get update && sudo apt-get install yarn
+
+#heroku
+sudo add-apt-repository "deb https://cli-assets.heroku.com/branches/stable/apt ./"
+curl -L https://cli-assets.heroku.com/apt/release.key | sudo apt-key add -
+sudo apt-get update
+sudo apt-get install heroku
+
+#arc-icons
+git clone https://github.com/horst3180/arc-icon-theme --depth 1 && cd arc-icon-theme
+./autogen.sh --prefix=/usr
+sudo make install
+
+#pip
+https://pip.pypa.io/en/stable/installing/
+
+#py3status (pour i3status)
+sudo pip install py3status
+
+#spotify
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys BBEBDCB318AD50EC6865090613B00F1FD2C19886
+echo deb http://repository.spotify.com stable non-free | sudo tee /etc/apt/sources.list.d/spotify.list
+sudo apt-get update
+sudo apt-get install spotify-client

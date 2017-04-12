@@ -1,0 +1,191 @@
+2017-04-11 17:18:07	--	irc: connecting to server chat.freenode.net/7000 (SSL)...
+2017-04-11 17:18:08	--	gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2017-04-11 17:18:08	--	gnutls: receiving 2 certificates
+2017-04-11 17:18:08	--	 - certificate[1] info:
+2017-04-11 17:18:08	--	   - subject `CN=adams.freenode.net', issuer `C=US,O=Let's Encrypt,CN=Let's Encrypt Authority X3', serial 0x0351b1c1faab1e8039764b21a5bbdb9749f9, RSA key 4096 bits, signed using RSA-SHA256, activated `2017-03-20 05:10:00 UTC', expires `2017-06-18 05:10:00 UTC', SHA-1 fingerprint `180bb2f8e547c069f92dfb68471ab60dfe17946c'
+2017-04-11 17:18:08	--	 - certificate[2] info:
+2017-04-11 17:18:08	--	   - subject `C=US,O=Let's Encrypt,CN=Let's Encrypt Authority X3', issuer `O=Digital Signature Trust Co.,CN=DST Root CA X3', serial 0x0a0141420000015385736a0b85eca708, RSA key 2048 bits, signed using RSA-SHA256, activated `2016-03-17 16:40:46 UTC', expires `2021-03-17 16:40:46 UTC', SHA-1 fingerprint `e6a3b45b062d509b3382282d196efe97d5956ccb'
+2017-04-11 17:18:08	--	gnutls: peer's certificate is trusted
+2017-04-11 17:18:08	--	irc: connected to chat.freenode.net/7000 (94.125.182.252)
+2017-04-11 17:18:08	--	adams.freenode.net: *** Looking up your hostname...
+2017-04-11 17:18:08	--	adams.freenode.net: *** Checking Ident
+2017-04-11 17:18:08	--	adams.freenode.net: *** Couldn't look up your hostname
+2017-04-11 17:18:18	--	adams.freenode.net: *** No Ident response
+2017-04-11 17:18:18	--	Welcome to the freenode Internet Relay Chat Network malko42
+2017-04-11 17:18:18	--	MSG(nickserv): identify ********
+2017-04-11 17:18:18	--	Your host is adams.freenode.net[94.125.182.252/7000], running version ircd-seven-1.1.4
+2017-04-11 17:18:18	--	This server was created Mon Jan 9 2017 at 14:25:49 CET
+2017-04-11 17:18:18	--	adams.freenode.net ircd-seven-1.1.4 DOQRSZaghilopswz CFILMPQSbcefgijklmnopqrstvz bkloveqjfI
+2017-04-11 17:18:18	--	CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstz CHANLIMIT=#:120 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=freenode STATUSMSG=@+ CALLERID=g CASEMAPPING=rfc1459 :are supported by this server
+2017-04-11 17:18:18	--	CHARSET=ascii NICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz CLIENTVER=3.0 CPRIVMSG CNOTICE ETRACE :are supported by this server
+2017-04-11 17:18:18	--	KNOCK SAFELIST ELIST=CTU WHOX :are supported by this server
+2017-04-11 17:18:18	--	There are 137 users and 92834 invisible on 27 servers
+2017-04-11 17:18:18	--	29 :IRC Operators online
+2017-04-11 17:18:18	--	46 :unknown connection(s)
+2017-04-11 17:18:18	--	59596 :channels formed
+2017-04-11 17:18:18	--	I have 4473 clients and 1 servers
+2017-04-11 17:18:18	--	4473 8163 :Current local users 4473, max 8163
+2017-04-11 17:18:18	--	92971 96186 :Current global users 92971, max 96186
+2017-04-11 17:18:18	--	Highest connection count: 8164 (8163 clients) (626149 connections received)
+2017-04-11 17:18:18	--	- adams.freenode.net Message of the Day -
+2017-04-11 17:18:18	--	- Welcome to adams.freenode.net. Thanks to ATW Internet Kft
+2017-04-11 17:18:18	--	- (http://www.atw.hu) for sponsoring this server!
+2017-04-11 17:18:18	--	-
+2017-04-11 17:18:18	--	- ADAMS, DOUGLAS (1952-2001).  Author of The Hitch Hikers Guide
+2017-04-11 17:18:18	--	- to the Galaxy and many other witty and humourous books,
+2017-04-11 17:18:18	--	- portrayed in his uniquely British irony. He is sorely missed
+2017-04-11 17:18:18	--	- by many millions of devoted fans. "So long and thanks for all
+2017-04-11 17:18:18	--	- the books!"
+2017-04-11 17:18:18	--	-
+2017-04-11 17:18:18	--	- Welcome to freenode - supporting the free and open source
+2017-04-11 17:18:18	--	- software communities since 1998.
+2017-04-11 17:18:18	--	-
+2017-04-11 17:18:18	--	- By connecting to freenode you indicate that you have read and
+2017-04-11 17:18:18	--	- accept our policies as set out on http://www.freenode.net
+2017-04-11 17:18:18	--	- freenode runs an open proxy scanner. Please join #freenode for
+2017-04-11 17:18:18	--	- any network-related questions or queries, where a number of
+2017-04-11 17:18:18	--	- volunteer staff and helpful users will be happy to assist you.
+2017-04-11 17:18:18	--	-
+2017-04-11 17:18:18	--	- You can meet us at FOSSCON (http://www.fosscon.org) where we get
+2017-04-11 17:18:18	--	- together with like-minded FOSS enthusiasts for talks and
+2017-04-11 17:18:18	--	- real-life collaboration.
+2017-04-11 17:18:18	--	-
+2017-04-11 17:18:18	--	- We would like to thank Private Internet Access
+2017-04-11 17:18:18	--	- (https://www.privateinternetaccess.com/) and the other
+2017-04-11 17:18:18	--	- organisations that help keep freenode and our other projects
+2017-04-11 17:18:18	--	- running for their sustained support.
+2017-04-11 17:18:18	--	-
+2017-04-11 17:18:18	--	- In particular we would like to thank the sponsor
+2017-04-11 17:18:18	--	- of this server, details of which can be found above.
+2017-04-11 17:18:18	--	-
+2017-04-11 17:18:18	--	End of /MOTD command.
+2017-04-11 17:18:18	--	User mode [+Zi] by malko42
+2017-04-11 17:18:18	--	NickServ (NickServ@services.): This nickname is registered. Please choose a different nickname, or identify via /msg NickServ identify <password>.
+2017-04-11 17:18:24	--	NickServ (NickServ@services.): You are now identified for malko42.
+2017-04-12 10:46:27	=!=	irc: reading data on socket: error -54 Error in the pull function.
+2017-04-12 10:46:27	--	irc: disconnecting from server...
+2017-04-12 10:46:27	--	irc: disconnected from server
+2017-04-12 10:46:27	--	irc: reconnecting to server in 10 seconds
+2017-04-12 10:46:37	--	irc: reconnecting to server...
+2017-04-12 10:46:37	--	irc: connecting to server chat.freenode.net/7000 (SSL)...
+2017-04-12 10:46:37	--	gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2017-04-12 10:46:37	--	gnutls: receiving 2 certificates
+2017-04-12 10:46:37	--	 - certificate[1] info:
+2017-04-12 10:46:37	--	   - subject `CN=cherryh.freenode.net', issuer `C=US,O=Let's Encrypt,CN=Let's Encrypt Authority X3', serial 0x03f1f5c912f5d72c0710a281f4ee99ac71d1, RSA key 4096 bits, signed using RSA-SHA256, activated `2017-02-19 15:05:00 UTC', expires `2017-05-20 15:05:00 UTC', SHA-1 fingerprint `0ca5c0f760e3b9cf7c575514fd33c1d82a2bffc0'
+2017-04-12 10:46:37	--	 - certificate[2] info:
+2017-04-12 10:46:37	--	   - subject `C=US,O=Let's Encrypt,CN=Let's Encrypt Authority X3', issuer `O=Digital Signature Trust Co.,CN=DST Root CA X3', serial 0x0a0141420000015385736a0b85eca708, RSA key 2048 bits, signed using RSA-SHA256, activated `2016-03-17 16:40:46 UTC', expires `2021-03-17 16:40:46 UTC', SHA-1 fingerprint `e6a3b45b062d509b3382282d196efe97d5956ccb'
+2017-04-12 10:46:37	--	gnutls: peer's certificate is trusted
+2017-04-12 10:46:37	--	irc: connected to chat.freenode.net/7000 (149.56.134.238)
+2017-04-12 10:46:37	--	cherryh.freenode.net: *** Looking up your hostname...
+2017-04-12 10:46:37	--	cherryh.freenode.net: *** Checking Ident
+2017-04-12 10:46:37	--	cherryh.freenode.net: *** Couldn't look up your hostname
+2017-04-12 10:46:45	--	cherryh.freenode.net: *** No Ident response
+2017-04-12 10:46:45	--	Welcome to the freenode Internet Relay Chat Network malko42
+2017-04-12 10:46:45	--	MSG(nickserv): identify ********
+2017-04-12 10:46:45	--	Your host is cherryh.freenode.net[149.56.134.238/7000], running version ircd-seven-1.1.4
+2017-04-12 10:46:45	--	This server was created Wed Jan 4 2017 at 16:45:00 EST
+2017-04-12 10:46:45	--	cherryh.freenode.net ircd-seven-1.1.4 DOQRSZaghilopswz CFILMPQSbcefgijklmnopqrstvz bkloveqjfI
+2017-04-12 10:46:45	--	CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstz CHANLIMIT=#:120 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=freenode STATUSMSG=@+ CALLERID=g CASEMAPPING=rfc1459 :are supported by this server
+2017-04-12 10:46:45	--	CHARSET=ascii NICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz CLIENTVER=3.0 CPRIVMSG CNOTICE SAFELIST :are supported by this server
+2017-04-12 10:46:45	--	ELIST=CTU WHOX ETRACE KNOCK :are supported by this server
+2017-04-12 10:46:45	--	There are 129 users and 89150 invisible on 27 servers
+2017-04-12 10:46:45	--	29 :IRC Operators online
+2017-04-12 10:46:45	--	15 :unknown connection(s)
+2017-04-12 10:46:45	--	59377 :channels formed
+2017-04-12 10:46:45	--	I have 4539 clients and 1 servers
+2017-04-12 10:46:45	--	4539 6857 :Current local users 4539, max 6857
+2017-04-12 10:46:45	--	89279 96186 :Current global users 89279, max 96186
+2017-04-12 10:46:45	--	Highest connection count: 6858 (6857 clients) (634248 connections received)
+2017-04-12 10:46:45	--	- cherryh.freenode.net Message of the Day -
+2017-04-12 10:46:45	--	- Welcome to freenode - supporting the free and open source
+2017-04-12 10:46:45	--	- software communities since 1998.
+2017-04-12 10:46:45	--	-
+2017-04-12 10:46:45	--	- By connecting to freenode you indicate that you have read and
+2017-04-12 10:46:45	--	- accept our policies as set out on http://www.freenode.net
+2017-04-12 10:46:45	--	- freenode runs an open proxy scanner. Please join #freenode for
+2017-04-12 10:46:45	--	- any network-related questions or queries, where a number of
+2017-04-12 10:46:45	--	- volunteer staff and helpful users will be happy to assist you.
+2017-04-12 10:46:45	--	-
+2017-04-12 10:46:45	--	- You can meet us at FOSSCON (http://www.fosscon.org) where we get
+2017-04-12 10:46:45	--	- together with like-minded FOSS enthusiasts for talks and
+2017-04-12 10:46:45	--	- real-life collaboration.
+2017-04-12 10:46:45	--	-
+2017-04-12 10:46:45	--	- We would like to thank Private Internet Access
+2017-04-12 10:46:45	--	- (https://www.privateinternetaccess.com/) and the other
+2017-04-12 10:46:45	--	- organisations that help keep freenode and our other projects
+2017-04-12 10:46:45	--	- running for their sustained support.
+2017-04-12 10:46:45	--	-
+2017-04-12 10:46:45	--	- In particular we would like to thank the sponsor
+2017-04-12 10:46:45	--	- of this server, details of which can be found above.
+2017-04-12 10:46:45	--	-
+2017-04-12 10:46:45	--	End of /MOTD command.
+2017-04-12 10:46:45	--	User mode [+Zi] by malko42
+2017-04-12 10:46:45	--	NickServ (NickServ@services.): This nickname is registered. Please choose a different nickname, or identify via /msg NickServ identify <password>.
+2017-04-12 10:46:50	--	NickServ (NickServ@services.): You are now identified for malko42.
+2017-04-12 11:52:23	--	irc: connecting to server chat.freenode.net/7000 (SSL)...
+2017-04-12 11:52:24	--	gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2017-04-12 11:52:24	--	gnutls: receiving 2 certificates
+2017-04-12 11:52:24	--	 - certificate[1] info:
+2017-04-12 11:52:24	--	   - subject `CN=card.freenode.net', issuer `C=US,O=Let's Encrypt,CN=Let's Encrypt Authority X3', serial 0x03bf86423bd641c62bc787b975fdb0dd4e11, RSA key 4096 bits, signed using RSA-SHA256, activated `2017-02-07 18:24:00 UTC', expires `2017-05-08 18:24:00 UTC', SHA-1 fingerprint `f3ae87c1db02beda324b978c0e381742560b2bbb'
+2017-04-12 11:52:24	--	 - certificate[2] info:
+2017-04-12 11:52:24	--	   - subject `C=US,O=Let's Encrypt,CN=Let's Encrypt Authority X3', issuer `O=Digital Signature Trust Co.,CN=DST Root CA X3', serial 0x0a0141420000015385736a0b85eca708, RSA key 2048 bits, signed using RSA-SHA256, activated `2016-03-17 16:40:46 UTC', expires `2021-03-17 16:40:46 UTC', SHA-1 fingerprint `e6a3b45b062d509b3382282d196efe97d5956ccb'
+2017-04-12 11:52:24	--	gnutls: peer's certificate is trusted
+2017-04-12 11:52:24	--	irc: connected to chat.freenode.net/7000 (38.229.70.22)
+2017-04-12 11:52:24	--	card.freenode.net: *** Looking up your hostname...
+2017-04-12 11:52:24	--	card.freenode.net: *** Checking Ident
+2017-04-12 11:52:24	--	card.freenode.net: *** Couldn't look up your hostname
+2017-04-12 11:52:32	--	card.freenode.net: *** No Ident response
+2017-04-12 11:52:32	--	Welcome to the freenode Internet Relay Chat Network malko42
+2017-04-12 11:52:33	--	MSG(nickserv): identify ********
+2017-04-12 11:52:33	--	Your host is card.freenode.net[38.229.70.22/7000], running version ircd-seven-1.1.4
+2017-04-12 11:52:33	--	This server was created Tue Feb 7 2017 at 17:41:14 UTC
+2017-04-12 11:52:33	--	card.freenode.net ircd-seven-1.1.4 DOQRSZaghilopswz CFILMPQSbcefgijklmnopqrstvz bkloveqjfI
+2017-04-12 11:52:33	--	CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstz CHANLIMIT=#:120 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=freenode STATUSMSG=@+ CALLERID=g CASEMAPPING=rfc1459 :are supported by this server
+2017-04-12 11:52:33	--	CHARSET=ascii NICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz CLIENTVER=3.0 KNOCK CPRIVMSG CNOTICE :are supported by this server
+2017-04-12 11:52:33	--	WHOX SAFELIST ELIST=CTU ETRACE :are supported by this server
+2017-04-12 11:52:33	--	There are 128 users and 89671 invisible on 27 servers
+2017-04-12 11:52:33	--	29 :IRC Operators online
+2017-04-12 11:52:33	--	65 :unknown connection(s)
+2017-04-12 11:52:33	--	59430 :channels formed
+2017-04-12 11:52:33	--	I have 3871 clients and 1 servers
+2017-04-12 11:52:33	--	3871 7467 :Current local users 3871, max 7467
+2017-04-12 11:52:33	--	89799 96186 :Current global users 89799, max 96186
+2017-04-12 11:52:33	--	Highest connection count: 7468 (7467 clients) (723096 connections received)
+2017-04-12 11:52:33	--	- card.freenode.net Message of the Day -
+2017-04-12 11:52:33	--	-
+2017-04-12 11:52:33	--	- Welcome to card.freenode.net in Washington, DC, US, kindly sponsored by
+2017-04-12 11:52:33	--	- Team Cymru (http://www.team-cymru.org).
+2017-04-12 11:52:33	--	-
+2017-04-12 11:52:33	--	- CARD, ORSON SCOTT [1951-]. Born in Richland, Washington, Card grew up in
+2017-04-12 11:52:33	--	- California, Arizona, and Utah. He lived in Brazil for two years as an unpaid
+2017-04-12 11:52:33	--	- missionary for the Mormon Church. Author of the Ender and Alvin Maker books,
+2017-04-12 11:52:33	--	- Card's science fiction and fantasy work is strongly influenced by his Mormon
+2017-04-12 11:52:33	--	- cultural background. The first author to win the Hugo and Nebula novel awards
+2017-04-12 11:52:33	--	- two years in a row, Card currently lives in Greensboro, North Carolina, US.
+2017-04-12 11:52:33	--	-
+2017-04-12 11:52:33	--	-
+2017-04-12 11:52:33	--	- Welcome to freenode - supporting the free and open source
+2017-04-12 11:52:33	--	- software communities since 1998.
+2017-04-12 11:52:33	--	-
+2017-04-12 11:52:33	--	- By connecting to freenode you indicate that you have read and
+2017-04-12 11:52:33	--	- accept our policies as set out on http://www.freenode.net
+2017-04-12 11:52:33	--	- freenode runs an open proxy scanner. Please join #freenode for
+2017-04-12 11:52:33	--	- any network-related questions or queries, where a number of
+2017-04-12 11:52:33	--	- volunteer staff and helpful users will be happy to assist you.
+2017-04-12 11:52:33	--	-
+2017-04-12 11:52:33	--	- You can meet us at FOSSCON (http://www.fosscon.org) where we get
+2017-04-12 11:52:33	--	- together with like-minded FOSS enthusiasts for talks and
+2017-04-12 11:52:33	--	- real-life collaboration.
+2017-04-12 11:52:33	--	-
+2017-04-12 11:52:33	--	- We would like to thank Private Internet Access
+2017-04-12 11:52:33	--	- (https://www.privateinternetaccess.com/) and the other
+2017-04-12 11:52:33	--	- organisations that help keep freenode and our other projects
+2017-04-12 11:52:33	--	- running for their sustained support.
+2017-04-12 11:52:33	--	-
+2017-04-12 11:52:33	--	- In particular we would like to thank the sponsor
+2017-04-12 11:52:33	--	- of this server, details of which can be found above.
+2017-04-12 11:52:33	--	-
+2017-04-12 11:52:33	--	End of /MOTD command.
+2017-04-12 11:52:33	--	User mode [+Zi] by malko42
+2017-04-12 11:52:33	--	NickServ (NickServ@services.): This nickname is registered. Please choose a different nickname, or identify via /msg NickServ identify <password>.
+2017-04-12 11:52:38	--	NickServ (NickServ@services.): You are now identified for malko42.
