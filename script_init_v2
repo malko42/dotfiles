@@ -10,6 +10,9 @@ cd fonts
 #oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
+#termite
+curl -sL https://raw.githubusercontent.com/Corwind/termite-install/master/termite-install.sh | sudo -E sh
+
 #node
 curl -sL https://deb.nodesource.com/setup_7.x | sudo -E bash -
 sudo apt install -y nodejs
