@@ -21,11 +21,11 @@ export PATH=~/.npm-global/bin:$PATH
 source ~/.zshrc
 
 #ssh
-cp .ssh ~
-ssh-add
+# cp .ssh ~
+# ssh-add
 
 #import gpg
-gpg --import private.key
+# gpg --import private.key
 
 #rust (pb avec zsh:: export SHELL=/bin/bash puis repasser en SHELL=/usr/bin/zsh et suivre instrcutions (sourcer cargo))
 curl https://sh.rustup.rs -sSf | sh
@@ -47,7 +47,7 @@ git clone https://github.com/horst3180/arc-icon-theme --depth 1 && cd arc-icon-t
 sudo make install
 
 #pip
-https://pip.pypa.io/en/stable/installing/
+# https://pip.pypa.io/en/stable/installing/
 sudo apt install python-pip -y
 
 #py3status (pour i3status)
