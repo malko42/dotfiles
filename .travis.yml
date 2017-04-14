@@ -1,0 +1,24 @@
+# For more information about the configurations used
+# in this file, please see the Travis CI documentation.
+#
+# https://docs.travis-ci.com
+language: generic
+
+install:
+  - ./src/script_init.sh
+
+matrix:
+  include:
+
+    - os: linux
+      dist: trusty
+
+notifications:
+  email:
+    on_failure: always
+    on_success: always
+
+script:
+  - ./test/main.sh
+
+sudo: required
