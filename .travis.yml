@@ -7,11 +7,7 @@ language: generic
 install:
   - ./src/script_init.sh
 
-matrix:
-  include:
-
-    - os: linux
-      dist: trusty
+dist: trusty
 
 notifications:
   email:
