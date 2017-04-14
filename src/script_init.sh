@@ -1,6 +1,6 @@
 #!/bin/bash
 #install global
-sudo apt install -y git curl tmux vim i3 dmenu dunst zsh build-essential vim thunderbird htop arc-theme lxappearance weechat
+execute "sudo apt install -y git curl tmux vim i3 dmenu dunst zsh build-essential vim thunderbird htop arc-theme lxappearance weechat"
 
 #powerline fonts
 # git clone https://github.com/powerline/fonts.git
