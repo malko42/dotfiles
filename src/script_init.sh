@@ -1,10 +1,10 @@
-#!/usr/bin/env sh
+#!/bin/bash
 #install global
 sudo apt install -y git curl tmux vim i3 dmenu dunst zsh build-essential vim thunderbird htop arc-theme lxappearance weechat
 
 #powerline fonts
 git clone https://github.com/powerline/fonts.git
-cd fonts
+cd fonts || exit
 ./install.sh
 
 #oh-my-zsh
@@ -18,9 +18,9 @@ curl -sL https://deb.nodesource.com/setup_7.x | sudo -E bash -
 
 #resolve npm permission problems
 mkdir ~/.npm-global
-npm config set prefix '~/.npm-global'
+npm config set prefix "$HOME/.npm-global"
 export PATH=~/.npm-global/bin:$PATH
-source ~/.zshrc
+source "$HOME/.zshrc"
 
 #ssh
 # cp .ssh ~
@@ -41,7 +41,7 @@ sudo add-apt-repository "deb https://cli-assets.heroku.com/branches/stable/apt .
 curl -L https://cli-assets.heroku.com/apt/release.key | sudo apt-key add -
 
 #arc-icons
-git clone https://github.com/horst3180/arc-icon-theme --depth 1 && cd arc-icon-theme
+git clone https://github.com/horst3180/arc-icon-theme --depth 1 && cd arc-icon-theme || exit
 ./autogen.sh --prefix=/usr
 sudo make install
 
