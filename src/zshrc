@@ -49,9 +49,10 @@ plugins=(git)
 
 # User configuration
 
-export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:~/.npm-global/bin
+export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:$HOME/.npm-global/bin
 # export MANPATH="/usr/local/man:$MANPATH"
 export PATH=$PATH:$HOME/.cargo/bin
+export PATH=$PATH:$HOME/.config/yarn/global/node_modules/.bin
 
 source $ZSH/oh-my-zsh.sh
 
@@ -71,10 +72,13 @@ export EDITOR='vim'
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
 alias tmux="tmux -2"
 alias h="heroku"
+
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# GIT aliases
+
 alias g="git"
 alias gs="git status"
 alias ga="git add"
@@ -90,6 +94,67 @@ alias gC="git checkout"
 alias gCM="git checkout master"
 alias gCB="git checkout -b"
 alias gb="git branch"
+alias gcp="git cherry-pick"
+alias gd="git diff"
+alias gdc="git diff --cached"
+alias gf="git fetch"
+alias gg="git log --graph --pretty=custom"       # Show custom graph.
+alias gl="git log --pretty=custom"               # Show custom log.
+alias glc="git shortlog --summary --numbered"    # List contributors.
+alias grb="git rebase"
+alias grlc="git reset --hard HEAD~1"               # Remove last commit.
+alias gulc="git reset --soft HEAD~1"               # Undo last commit.
+alias gw="git instaweb --httpd=webrick"          # Start web-based visualizer.
+
+# Find commits by source code.
+function gscc() {
+  git log --pretty=custom --decorate --date=short -S "$1";
+};
+
+# Find commits by commit message.
+function gscm() {
+  git log --pretty=custom --decorate --date=short --grep="$1";
+};
+
+# Credit an author on the latest commit.
+function gcredit() {
+  if [ -n "$1" ] && [ -n "$2" ]; then
+    git commit --amend --author "$1 <$2>" -C HEAD;
+  fi
+};
+
+# List remote branches.
+function glrb() {
+  remote="${1:-origin}";
+  git ls-remote --heads "$remote";
+};
+
+# Merge GitHub pull request on top of the current branch or,
+# if a branch name is specified, on top of the specified branch.
+function gmpr() {
+  declare currentBranch=\"$(git symbolic-ref --short HEAD)\";
+  declare branch=\"${2:-$currentBranch}\";
+  if [ $(printf \"%s\" \"$1\" | grep '^[0-9]\\+$' > /dev/null; printf $?) -eq 0 ]; then
+    git fetch origin refs/pull/$1/head:pr/$1 && \
+    git checkout -B $branch && \
+    git rebase $branch pr/$1 && \
+    git checkout -B $branch && \
+    git merge pr/$1 && \
+    git branch -D pr/$1 && \
+    git commit --amend -m "$(git log -1 --pretty=%B)\n\nClose #$1";
+  fi
+};
+
+# Remove the tag with the specified tag name if
+# exists and tag the latest commit with that name.
+function gretag() {
+  git tag -d "$1" &> /dev/null;
+  git tag $1;
+};
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# Yaourt (arch package manager) aliases
+
 # alias y="yaourt"
 # alias ys="yaourt -S"
 # alias yss="yaourt -Ss"
@@ -97,6 +162,10 @@ alias gb="git branch"
 # alias ysu="yaourt -Syu"
 # alias yar="yaourt -Qdt"
 # alias ysc="yaourt -Sc"
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# APT (debian/ubuntu package manager) aliases
+
 alias a="sudo apt"
 alias ai="sudo apt install -y"
 alias as="sudo apt search"
