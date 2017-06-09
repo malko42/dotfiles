@@ -50,7 +50,7 @@
 
 [commit]
 
-			gpgsign = true
+			#gpgsign = true
 
 [user]
 
@@ -60,7 +60,7 @@
     # useConfigOnly = true
 		email = malkovitch@gmail.com
 		name = Maxime Daffis
-		signingkey = D1850DB5
+		#signingkey = D1850DB5
 
 [include]
 

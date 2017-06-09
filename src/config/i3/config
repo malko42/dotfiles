@@ -21,7 +21,7 @@ bindsym $mod+l exec ~/.config/i3/i3lock.sh
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
 #font pango:Meslo LG S DZ for Powerline 10
-font pango:Monaco Regular 10
+font pango:Monaco Regular 8
 #font pango:DejaVu Sans 8
 #font pango:Monaco for Powerline 8
 # Before i3 v4.8, we used to recommend this one as the default:
@@ -36,7 +36,7 @@ floating_modifier $mod
 
 #wrkspc 1 big screen
 #workspace $tag1 output HDMI-1-1
-workspace $tag1 output HDMI-1-1
+#workspace $tag1 output HDMI-1-1
 
 # start a terminal
 #bindsym $mod+Return exec xfce4-terminal
@@ -50,9 +50,12 @@ bindsym XF86AudioMute exec /usr/bin/pactl set-sink-mute @DEFAULT_SINK@ toggle
 #startup
 #exec --no-startup-id xrandr --output eDP-1-1 --primary --left-of HDMI-1-1
 #exec --no-startup-id xrandr --output HDMI-1-1 --primary --left-of eDP-1-1
-exec --no-startup-id xrandr --output HDMI-1-1 --primary --left-of eDP-1-1
+#exec --no-startup-id xrandr --output HDMI-1-1 --primary --left-of eDP-1-1
+#xrandr --output DVI-D-0 --right-of --output DP-4 --primary
 #exec --no-startup-id xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape'
+#exec --no-startup-id xrandr --output DVI-D-0 --mode 1680x1050 --pos 1920x0 --rotate normal --output HDMI-0 --off --output DP-5 --off --output DP-4 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output DP-3 --off --output DP-2 --off --output DP-1 --off --output DP-0 --off
 exec --no-startup-id /usr/lib/gnome-settings-daemon/gnome-settings-daemon
+#exec --no-startup-id autorandr -c
 
 # kill focused window
 bindsym $mod+Shift+q kill

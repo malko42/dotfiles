@@ -1,6 +1,6 @@
 [options]
-font = Meslo LG S DZ for Powerline 8
-#font = Monaco for Powerline 8
+#font = Meslo LG S DZ for Powerline 8
+font = Monaco for Powerline 8
 #scroll_on_output = false
 #scroll_on_keystroke = true
 #audible_bell = false
